@@ -20,6 +20,10 @@
 
 Read the [design document](https://dede.dev/posts/Media-downloader-telegramBot-design-document/) for a detailed overview of the bot's design.
 
+## Design
+
+Find more details on the [design document](https://dede.dev/posts/Media-downloader-telegramBot-design-document/){:target="_blank"}.
+
 ## Prerequisites
 
 Before building the program, ensure that you have the following dependencies installed:

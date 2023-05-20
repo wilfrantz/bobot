@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/linuxbrew/.linuxbrew/Cellar/cmake/3.26.2/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.26.3/bin/cmake
 
 # The command to remove a file.
-RM = /home/linuxbrew/.linuxbrew/Cellar/cmake/3.26.2/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.26.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dede/Code/Github/sipeto
+CMAKE_SOURCE_DIR = /Users/dede/Code/Github/sipetoBot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dede/Code/Github/sipeto
+CMAKE_BINARY_DIR = /Users/dede/Code/Github/sipetoBot
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/dede/Code/Github/sipeto
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.26.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.26.3/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.26.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.26.3/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dede/Code/Github/sipeto/CMakeFiles /home/dede/Code/Github/sipeto//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dede/Code/Github/sipetoBot/CMakeFiles /Users/dede/Code/Github/sipetoBot//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dede/Code/Github/sipeto/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dede/Code/Github/sipetoBot/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ sipeto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/build
 .PHONY : sipeto/fast
 
+src/instagram.o: src/instagram.cpp.o
+.PHONY : src/instagram.o
+
+# target to build an object file
+src/instagram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/instagram.cpp.o
+.PHONY : src/instagram.cpp.o
+
+src/instagram.i: src/instagram.cpp.i
+.PHONY : src/instagram.i
+
+# target to preprocess a source file
+src/instagram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/instagram.cpp.i
+.PHONY : src/instagram.cpp.i
+
+src/instagram.s: src/instagram.cpp.s
+.PHONY : src/instagram.s
+
+# target to generate assembly for a file
+src/instagram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/instagram.cpp.s
+.PHONY : src/instagram.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -152,6 +176,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/media_downloader.o: src/media_downloader.cpp.o
+.PHONY : src/media_downloader.o
+
+# target to build an object file
+src/media_downloader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/media_downloader.cpp.o
+.PHONY : src/media_downloader.cpp.o
+
+src/media_downloader.i: src/media_downloader.cpp.i
+.PHONY : src/media_downloader.i
+
+# target to preprocess a source file
+src/media_downloader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/media_downloader.cpp.i
+.PHONY : src/media_downloader.cpp.i
+
+src/media_downloader.s: src/media_downloader.cpp.s
+.PHONY : src/media_downloader.s
+
+# target to generate assembly for a file
+src/media_downloader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/media_downloader.cpp.s
+.PHONY : src/media_downloader.cpp.s
 
 src/simple_http_server.o: src/simple_http_server.cpp.o
 .PHONY : src/simple_http_server.o
@@ -201,6 +249,54 @@ src/sipeto.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/sipeto.cpp.s
 .PHONY : src/sipeto.cpp.s
 
+src/tiktok.o: src/tiktok.cpp.o
+.PHONY : src/tiktok.o
+
+# target to build an object file
+src/tiktok.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/tiktok.cpp.o
+.PHONY : src/tiktok.cpp.o
+
+src/tiktok.i: src/tiktok.cpp.i
+.PHONY : src/tiktok.i
+
+# target to preprocess a source file
+src/tiktok.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/tiktok.cpp.i
+.PHONY : src/tiktok.cpp.i
+
+src/tiktok.s: src/tiktok.cpp.s
+.PHONY : src/tiktok.s
+
+# target to generate assembly for a file
+src/tiktok.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/tiktok.cpp.s
+.PHONY : src/tiktok.cpp.s
+
+src/twitter.o: src/twitter.cpp.o
+.PHONY : src/twitter.o
+
+# target to build an object file
+src/twitter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/twitter.cpp.o
+.PHONY : src/twitter.cpp.o
+
+src/twitter.i: src/twitter.cpp.i
+.PHONY : src/twitter.i
+
+# target to preprocess a source file
+src/twitter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/twitter.cpp.i
+.PHONY : src/twitter.cpp.i
+
+src/twitter.s: src/twitter.cpp.s
+.PHONY : src/twitter.s
+
+# target to generate assembly for a file
+src/twitter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sipeto.dir/build.make CMakeFiles/sipeto.dir/src/twitter.cpp.s
+.PHONY : src/twitter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,15 +306,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... sipeto"
+	@echo "... src/instagram.o"
+	@echo "... src/instagram.i"
+	@echo "... src/instagram.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/media_downloader.o"
+	@echo "... src/media_downloader.i"
+	@echo "... src/media_downloader.s"
 	@echo "... src/simple_http_server.o"
 	@echo "... src/simple_http_server.i"
 	@echo "... src/simple_http_server.s"
 	@echo "... src/sipeto.o"
 	@echo "... src/sipeto.i"
 	@echo "... src/sipeto.s"
+	@echo "... src/tiktok.o"
+	@echo "... src/tiktok.i"
+	@echo "... src/tiktok.s"
+	@echo "... src/twitter.o"
+	@echo "... src/twitter.i"
+	@echo "... src/twitter.s"
 .PHONY : help
 
 
