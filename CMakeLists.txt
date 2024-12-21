@@ -59,3 +59,5 @@ endif()
 #   add_subdirectory(test)
 #   add_test(NAME ${PROJECT_NAME}_tests COMMAND test/${PROJECT_NAME}_test)
 # endif (BUILD_TESTS)
+
+include_directories(${PROJECT_SOURCE_DIR}/src)

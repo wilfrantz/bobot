@@ -179,6 +179,7 @@ namespace sipeto
     void Sipeto::processTargetKeys(const Json::Value &configValue, const std::string &key)
     {
         _logger->debug("Processing target key: {}", key);
+        /// NOTE: this should be Object, not array.
         if (configValue.isArray())
         {
             for (const auto &element : configValue)

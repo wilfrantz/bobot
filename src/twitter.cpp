@@ -1,5 +1,4 @@
-
-#include "include/twitter.h"
+#include "twitter..h"
 
 using namespace sipeto;
 using namespace mediaDownloader;
@@ -17,7 +16,7 @@ namespace twitter
 
     MediaDownloader::ReturnCode Twitter::downloadMedia()
     {
-        _logger->debug("Downloading media.");
+        _logger->debug("- Downloading Twitter media.");
 
         // Initialize libcurl
         curl_global_init(CURL_GLOBAL_DEFAULT);

@@ -41,6 +41,7 @@ namespace twitter
         const std::string &_outputFilePath{"path"};
         std::map<std::string, std::string> _attributes;
         static std::shared_ptr<spdlog::logger> _logger;
+        inline std::map<std::string, std::string> &getTheMap() override { return _configMap; }
 
         std::string API_URL = "URL";
         std::string MEDIA_URL = "don't change this.";

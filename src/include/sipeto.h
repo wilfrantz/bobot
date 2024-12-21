@@ -67,7 +67,8 @@ namespace sipeto
 
         /// NOTE: to load array related to each social media from config file.
         const std::vector<std::string> _targetKeys = {"twitter", "tiktok", "instagram", "facebook"};
-        const std::string &getFromConfigMap(const std::string &key, const std::map<std::string, std::string> &configMap = _configMap);
+        const std::string &getFromConfigMap(const std::string &key,
+                                            const std::map<std::string, std::string> &configMap = _configMap);
 
         /// NOTE: to map the key in the config file to the key in the config map.
         std::unordered_map<std::string, std::string> _keyMap = {
