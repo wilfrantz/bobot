@@ -1,8 +1,34 @@
+# Ignore Git directory
 .git
+
+# Ignore build directory
 build/
+
+# Ignore VS Code settings
 .vscode/
+
+# Ignore documentation files
 docs/
+
+# Ignore configuration files
 sipeto_config.json
+
+# Ignore Telegram bot API directory
 telegram-bot-api/
+
+# Ignore message JSON files
 message.json
+
+# Ignore example C++ files
 example.cpp
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+sipeto
+sipeto.dSYM/
+sipeto_test
+sipeto_test.dSYM/

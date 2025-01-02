@@ -1,0 +1,15 @@
+[
+  {
+    "ProjectID": "sipetoBot",
+    "version": "1.0.0",
+    "data": [
+      {
+        "token": "6065421198:AAGWwSHXNhmQVNq9SC3wB7NOzi5ZeBur23g",
+        "configPath": "/Users/dede/Code/Github/sipetoBot",
+        "configFile": "config.json",
+        "uri": "https://api.telegram.org/bot",
+        "author": "Wilfrantz Dede"
+      }
+    ]
+  }
+]
